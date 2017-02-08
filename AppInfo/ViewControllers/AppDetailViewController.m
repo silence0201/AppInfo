@@ -8,6 +8,7 @@
 
 #import "AppDetailViewController.h"
 #import "SIAppController.h"
+#import "TableViewCell.h"
 
 @interface AppDetailViewController ()
 
@@ -31,7 +32,9 @@
 
 @end
 
-@implementation AppDetailViewController
+@implementation AppDetailViewController{
+    TableViewCell *_selectedCell ;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -52,6 +55,7 @@
     self.vendorNameLabel.text = self.app.vendorName ;
     self.minimumSystemVersionLabel.text = self.app.minimumSystemVersion ;
     self.sdkVersionLabel.text = self.app.sdkVersion ;
+    [self appInfo] ;
 }
 
 - (void)appInfo{
@@ -98,6 +102,42 @@
     [self presentViewController:actionController animated:YES completion:nil];
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    // menuControllerd的显示依赖第一相应者,当点击另外的cell时,当前cell取消第一响应者状态
+    UIMenuController *menu = [UIMenuController sharedMenuController] ;
+    if (menu.isMenuVisible) {
+        [menu setMenuVisible:NO animated:YES] ;
+    }else{
+        TableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath] ;
+        _selectedCell = cell ;
+        // 不设置为第一响应者无法显示
+        [cell becomeFirstResponder] ;
+        
+        UIMenuItem * item0 = [[UIMenuItem alloc]initWithTitle:@"copy" action:@selector(myCopy:)];
+        menu.menuItems = @[item0];
+        
+        [menu setTargetRect:CGRectMake(0, cell.frame.size.height * 0.5, cell.frame.size.width, cell.frame.size.height) inView:cell];
+        
+        [menu setMenuVisible:YES animated:YES];
+    }
+
+}
+
+- (void)myCopy:(id)sender{
+    // 复制文字到剪贴板
+    UIPasteboard *paste = [UIPasteboard generalPasteboard] ;
+    paste.string = _selectedCell.detailTextLabel.text ;
+}
+
+//- (BOOL)canPerformAction:(SEL)action withSender:(id)sender{
+//    if(action == @selector(cut:)
+//       || action == @selector(copy:)
+//       || action == @selector(myCut:)
+//       || action == @selector(myPaste:)){
+//        return YES ;
+//    }
+//    return NO ;
+//}
 
 #pragma mark - Table view data source
 

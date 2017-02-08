@@ -13,6 +13,7 @@
 		E8F56A941E4AF3BC00C7792C /* SchemeListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8F56A911E4AF3BC00C7792C /* SchemeListViewController.m */; };
 		E8F56A9C1E4AF41700C7792C /* SIApp.m in Sources */ = {isa = PBXBuildFile; fileRef = E8F56A991E4AF41700C7792C /* SIApp.m */; };
 		E8F56A9D1E4AF41700C7792C /* SIAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8F56A9B1E4AF41700C7792C /* SIAppController.m */; };
+		E8F56AA01E4AFDF700C7792C /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E8F56A9F1E4AFDF700C7792C /* TableViewCell.m */; };
 		E8FA84351E4AA05900983ABD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FA84341E4AA05900983ABD /* main.m */; };
 		E8FA84381E4AA05900983ABD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FA84371E4AA05900983ABD /* AppDelegate.m */; };
 		E8FA843E1E4AA05900983ABD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8FA843C1E4AA05900983ABD /* Main.storyboard */; };
@@ -36,6 +37,8 @@
 		E8F56A991E4AF41700C7792C /* SIApp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SIApp.m; path = AppModel/SIApp.m; sourceTree = "<group>"; };
 		E8F56A9A1E4AF41700C7792C /* SIAppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SIAppController.h; path = AppModel/SIAppController.h; sourceTree = "<group>"; };
 		E8F56A9B1E4AF41700C7792C /* SIAppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SIAppController.m; path = AppModel/SIAppController.m; sourceTree = "<group>"; };
+		E8F56A9E1E4AFDF700C7792C /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		E8F56A9F1E4AFDF700C7792C /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
 		E8FA84301E4AA05900983ABD /* AppInfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppInfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8FA84341E4AA05900983ABD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E8FA84361E4AA05900983ABD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -115,6 +118,8 @@
 				E8FA843F1E4AA05900983ABD /* Assets.xcassets */,
 				E8FA84441E4AA05900983ABD /* Info.plist */,
 				E8FA84341E4AA05900983ABD /* main.m */,
+				E8F56A9E1E4AFDF700C7792C /* TableViewCell.h */,
+				E8F56A9F1E4AFDF700C7792C /* TableViewCell.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -281,6 +286,7 @@
 				E8F56A941E4AF3BC00C7792C /* SchemeListViewController.m in Sources */,
 				E8F56A921E4AF3BC00C7792C /* AppDetailViewController.m in Sources */,
 				E8F56A9C1E4AF41700C7792C /* SIApp.m in Sources */,
+				E8F56AA01E4AFDF700C7792C /* TableViewCell.m in Sources */,
 				E8F56A931E4AF3BC00C7792C /* AppListViewController.m in Sources */,
 				E8FA84351E4AA05900983ABD /* main.m in Sources */,
 			);

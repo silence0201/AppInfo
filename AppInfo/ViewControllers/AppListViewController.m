@@ -9,6 +9,7 @@
 #import "AppListViewController.h"
 #import "AppDetailViewController.h"
 #import "SIAppController.h"
+#import "TableViewCell.h"
 
 static NSString *cellIdentifier = @"AppListCellIdentifier" ;
 
