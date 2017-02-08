@@ -403,9 +403,10 @@
 			baseConfigurationReference = 49ED8F44A0C29E032E0F459F /* Pods-AppInfo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = UKBBWVJH59;
 				INFOPLIST_FILE = AppInfo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.silence.AppInfo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -417,9 +418,10 @@
 			baseConfigurationReference = 38DDCF9BBD63D4E6B2B7B5C9 /* Pods-AppInfo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = UKBBWVJH59;
 				INFOPLIST_FILE = AppInfo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.silence.AppInfo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

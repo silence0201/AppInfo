@@ -12,7 +12,7 @@
 
 static NSString *cellIdentifier = @"AppListCellIdentifier" ;
 
-@interface AppListViewController ()
+@interface AppListViewController ()<UIViewControllerPreviewingDelegate>
 
 @property (nonatomic,strong) NSArray<SIApp *> *apps ;
 
@@ -23,6 +23,7 @@ static NSString *cellIdentifier = @"AppListCellIdentifier" ;
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.apps = [SIAppController sharedInstance].installedApplications ;
+    [self registerForPreviewingWithDelegate:self sourceView:self.tableView] ;
 }
 - (IBAction)startRefresh:(UIRefreshControl *)sender {
     [sender endRefreshing];
@@ -58,6 +59,26 @@ static NSString *cellIdentifier = @"AppListCellIdentifier" ;
             dvc.app = self.apps[indexPath.row] ;
         }
     }
+}
+
+#pragma mark -- UIViewControllerPreviewingDelegate
+- (UIViewController *)previewingContext:(id<UIViewControllerPreviewing>)previewingContext viewControllerForLocation:(CGPoint)location{
+    CGPoint point = [previewingContext.sourceView convertPoint:location toView:self.tableView] ;
+    NSIndexPath *indexPath = [self.tableView indexPathForRowAtPoint:point] ;
+    if([self.presentedViewController isKindOfClass:[AppDetailViewController class]]){
+        return nil ;
+    }else{
+        UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        UIViewController *vc = [sb instantiateViewControllerWithIdentifier:@"AppDetailViewController"];
+        AppDetailViewController *detailVc = (AppDetailViewController *)vc ;
+        detailVc.app = self.apps[indexPath.row] ;
+        return detailVc ;
+    }
+}
+
+- (void)previewingContext:(id<UIViewControllerPreviewing>)previewingContext commitViewController:viewControllerToCommit{
+    AppDetailViewController *dvc = (AppDetailViewController *)viewControllerToCommit ;
+    [self.navigationController pushViewController:dvc animated:YES] ;
 }
 
 
