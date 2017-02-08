@@ -8,21 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		51A2160E06D1D55924674D70 /* libPods-AppInfo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF05BC5633AA7561769C67D1 /* libPods-AppInfo.a */; };
+		E8F56A921E4AF3BC00C7792C /* AppDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8F56A8D1E4AF3BC00C7792C /* AppDetailViewController.m */; };
+		E8F56A931E4AF3BC00C7792C /* AppListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8F56A8F1E4AF3BC00C7792C /* AppListViewController.m */; };
+		E8F56A941E4AF3BC00C7792C /* SchemeListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8F56A911E4AF3BC00C7792C /* SchemeListViewController.m */; };
+		E8F56A9C1E4AF41700C7792C /* SIApp.m in Sources */ = {isa = PBXBuildFile; fileRef = E8F56A991E4AF41700C7792C /* SIApp.m */; };
+		E8F56A9D1E4AF41700C7792C /* SIAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8F56A9B1E4AF41700C7792C /* SIAppController.m */; };
 		E8FA84351E4AA05900983ABD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FA84341E4AA05900983ABD /* main.m */; };
 		E8FA84381E4AA05900983ABD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FA84371E4AA05900983ABD /* AppDelegate.m */; };
 		E8FA843E1E4AA05900983ABD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8FA843C1E4AA05900983ABD /* Main.storyboard */; };
 		E8FA84401E4AA05900983ABD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8FA843F1E4AA05900983ABD /* Assets.xcassets */; };
 		E8FA84431E4AA05900983ABD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8FA84411E4AA05900983ABD /* LaunchScreen.storyboard */; };
-		E8FA844D1E4AA9CE00983ABD /* SIApp.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FA844C1E4AA9CE00983ABD /* SIApp.m */; };
-		E8FA84501E4AA9E600983ABD /* SIAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FA844F1E4AA9E600983ABD /* SIAppController.m */; };
-		E8FA84581E4AD2C000983ABD /* AppListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FA84571E4AD2C000983ABD /* AppListViewController.m */; };
-		E8FA845B1E4AD2EA00983ABD /* AppDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FA845A1E4AD2EA00983ABD /* AppDetailViewController.m */; };
-		E8FA845E1E4AD31400983ABD /* SchemeListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FA845D1E4AD31400983ABD /* SchemeListViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		38DDCF9BBD63D4E6B2B7B5C9 /* Pods-AppInfo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppInfo.release.xcconfig"; path = "Pods/Target Support Files/Pods-AppInfo/Pods-AppInfo.release.xcconfig"; sourceTree = "<group>"; };
 		49ED8F44A0C29E032E0F459F /* Pods-AppInfo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppInfo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AppInfo/Pods-AppInfo.debug.xcconfig"; sourceTree = "<group>"; };
+		E8F56A8C1E4AF3BC00C7792C /* AppDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDetailViewController.h; path = ViewControllers/AppDetailViewController.h; sourceTree = "<group>"; };
+		E8F56A8D1E4AF3BC00C7792C /* AppDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDetailViewController.m; path = ViewControllers/AppDetailViewController.m; sourceTree = "<group>"; };
+		E8F56A8E1E4AF3BC00C7792C /* AppListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppListViewController.h; path = ViewControllers/AppListViewController.h; sourceTree = "<group>"; };
+		E8F56A8F1E4AF3BC00C7792C /* AppListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppListViewController.m; path = ViewControllers/AppListViewController.m; sourceTree = "<group>"; };
+		E8F56A901E4AF3BC00C7792C /* SchemeListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SchemeListViewController.h; path = ViewControllers/SchemeListViewController.h; sourceTree = "<group>"; };
+		E8F56A911E4AF3BC00C7792C /* SchemeListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SchemeListViewController.m; path = ViewControllers/SchemeListViewController.m; sourceTree = "<group>"; };
+		E8F56A951E4AF3ED00C7792C /* LSApplicationProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LSApplicationProxy.h; path = PrivateHender/LSApplicationProxy.h; sourceTree = "<group>"; };
+		E8F56A961E4AF3ED00C7792C /* LSApplicationWorkspace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LSApplicationWorkspace.h; path = PrivateHender/LSApplicationWorkspace.h; sourceTree = "<group>"; };
+		E8F56A971E4AF3ED00C7792C /* UIImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIImage.h; path = PrivateHender/UIImage.h; sourceTree = "<group>"; };
+		E8F56A981E4AF41700C7792C /* SIApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SIApp.h; path = AppModel/SIApp.h; sourceTree = "<group>"; };
+		E8F56A991E4AF41700C7792C /* SIApp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SIApp.m; path = AppModel/SIApp.m; sourceTree = "<group>"; };
+		E8F56A9A1E4AF41700C7792C /* SIAppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SIAppController.h; path = AppModel/SIAppController.h; sourceTree = "<group>"; };
+		E8F56A9B1E4AF41700C7792C /* SIAppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SIAppController.m; path = AppModel/SIAppController.m; sourceTree = "<group>"; };
 		E8FA84301E4AA05900983ABD /* AppInfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppInfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8FA84341E4AA05900983ABD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E8FA84361E4AA05900983ABD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -31,19 +44,6 @@
 		E8FA843F1E4AA05900983ABD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E8FA84421E4AA05900983ABD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E8FA84441E4AA05900983ABD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E8FA844B1E4AA9CE00983ABD /* SIApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIApp.h; sourceTree = "<group>"; };
-		E8FA844C1E4AA9CE00983ABD /* SIApp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIApp.m; sourceTree = "<group>"; };
-		E8FA844E1E4AA9E600983ABD /* SIAppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIAppController.h; sourceTree = "<group>"; };
-		E8FA844F1E4AA9E600983ABD /* SIAppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIAppController.m; sourceTree = "<group>"; };
-		E8FA84511E4AAAFF00983ABD /* LSApplicationProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSApplicationProxy.h; sourceTree = "<group>"; };
-		E8FA84521E4AAB0B00983ABD /* LSApplicationWorkspace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSApplicationWorkspace.h; sourceTree = "<group>"; };
-		E8FA84541E4AC44500983ABD /* UIImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIImage.h; sourceTree = "<group>"; };
-		E8FA84561E4AD2C000983ABD /* AppListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppListViewController.h; sourceTree = "<group>"; };
-		E8FA84571E4AD2C000983ABD /* AppListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppListViewController.m; sourceTree = "<group>"; };
-		E8FA84591E4AD2EA00983ABD /* AppDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDetailViewController.h; sourceTree = "<group>"; };
-		E8FA845A1E4AD2EA00983ABD /* AppDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDetailViewController.m; sourceTree = "<group>"; };
-		E8FA845C1E4AD31400983ABD /* SchemeListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SchemeListViewController.h; sourceTree = "<group>"; };
-		E8FA845D1E4AD31400983ABD /* SchemeListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SchemeListViewController.m; sourceTree = "<group>"; };
 		EF05BC5633AA7561769C67D1 /* libPods-AppInfo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AppInfo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -122,10 +122,10 @@
 		E8FA844A1E4AA9A800983ABD /* AppModel */ = {
 			isa = PBXGroup;
 			children = (
-				E8FA844B1E4AA9CE00983ABD /* SIApp.h */,
-				E8FA844C1E4AA9CE00983ABD /* SIApp.m */,
-				E8FA844E1E4AA9E600983ABD /* SIAppController.h */,
-				E8FA844F1E4AA9E600983ABD /* SIAppController.m */,
+				E8F56A981E4AF41700C7792C /* SIApp.h */,
+				E8F56A991E4AF41700C7792C /* SIApp.m */,
+				E8F56A9A1E4AF41700C7792C /* SIAppController.h */,
+				E8F56A9B1E4AF41700C7792C /* SIAppController.m */,
 			);
 			name = AppModel;
 			sourceTree = "<group>";
@@ -133,9 +133,9 @@
 		E8FA84531E4AAB4400983ABD /* PrivateHender */ = {
 			isa = PBXGroup;
 			children = (
-				E8FA84511E4AAAFF00983ABD /* LSApplicationProxy.h */,
-				E8FA84521E4AAB0B00983ABD /* LSApplicationWorkspace.h */,
-				E8FA84541E4AC44500983ABD /* UIImage.h */,
+				E8F56A951E4AF3ED00C7792C /* LSApplicationProxy.h */,
+				E8F56A961E4AF3ED00C7792C /* LSApplicationWorkspace.h */,
+				E8F56A971E4AF3ED00C7792C /* UIImage.h */,
 			);
 			name = PrivateHender;
 			sourceTree = "<group>";
@@ -143,12 +143,12 @@
 		E8FA84551E4AD29800983ABD /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				E8FA84561E4AD2C000983ABD /* AppListViewController.h */,
-				E8FA84571E4AD2C000983ABD /* AppListViewController.m */,
-				E8FA84591E4AD2EA00983ABD /* AppDetailViewController.h */,
-				E8FA845A1E4AD2EA00983ABD /* AppDetailViewController.m */,
-				E8FA845C1E4AD31400983ABD /* SchemeListViewController.h */,
-				E8FA845D1E4AD31400983ABD /* SchemeListViewController.m */,
+				E8F56A8C1E4AF3BC00C7792C /* AppDetailViewController.h */,
+				E8F56A8D1E4AF3BC00C7792C /* AppDetailViewController.m */,
+				E8F56A8E1E4AF3BC00C7792C /* AppListViewController.h */,
+				E8F56A8F1E4AF3BC00C7792C /* AppListViewController.m */,
+				E8F56A901E4AF3BC00C7792C /* SchemeListViewController.h */,
+				E8F56A911E4AF3BC00C7792C /* SchemeListViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -277,12 +277,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8FA84381E4AA05900983ABD /* AppDelegate.m in Sources */,
-				E8FA845E1E4AD31400983ABD /* SchemeListViewController.m in Sources */,
+				E8F56A9D1E4AF41700C7792C /* SIAppController.m in Sources */,
+				E8F56A941E4AF3BC00C7792C /* SchemeListViewController.m in Sources */,
+				E8F56A921E4AF3BC00C7792C /* AppDetailViewController.m in Sources */,
+				E8F56A9C1E4AF41700C7792C /* SIApp.m in Sources */,
+				E8F56A931E4AF3BC00C7792C /* AppListViewController.m in Sources */,
 				E8FA84351E4AA05900983ABD /* main.m in Sources */,
-				E8FA844D1E4AA9CE00983ABD /* SIApp.m in Sources */,
-				E8FA845B1E4AD2EA00983ABD /* AppDetailViewController.m in Sources */,
-				E8FA84501E4AA9E600983ABD /* SIAppController.m in Sources */,
-				E8FA84581E4AD2C000983ABD /* AppListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
