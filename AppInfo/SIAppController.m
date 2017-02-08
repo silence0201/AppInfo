@@ -7,7 +7,6 @@
 //
 
 #import "SIAppController.h"
-#import "SIApp.h"
 #import <Invoker/Invoker.h>
 
 #pragma mark -  参考 PrivateHender/LSApplicationWorkspace
@@ -56,7 +55,7 @@
 }
 
 #pragma mark --- Property
-- (NSArray *)installedApplications{
+- (NSArray<SIApp *> *)installedApplications{
     if (!_installedApplications) {
         _installedApplications = [self readApplications] ;
     }

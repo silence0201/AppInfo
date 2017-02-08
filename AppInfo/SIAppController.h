@@ -6,13 +6,13 @@
 //  Copyright © 2017 Silence. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "SIApp.h"
 
 @interface SIAppController : NSObject
 
 + (instancetype)sharedInstance ;
 
-@property (nonatomic,readonly) NSArray *installedApplications ;
+@property (nonatomic,readonly) NSArray<SIApp *> *installedApplications ;
 
 - (BOOL)openAppWithBundleIdentifier:(NSString* )bundleIdentifier;
 - (NSArray* )privateURLSchemes;
