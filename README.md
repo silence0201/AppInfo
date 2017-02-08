@@ -11,7 +11,10 @@ AppInfo
 
 ###预览
 
-![1](screenshot/screenshot_1.jpg)
-![2](screenshot/screenshot_2.jpg)
-![3](screenshot/screenshot_3.jpg)
-![4](screenshot/screenshot_4.jpg)
+| ![1](screenshot/screenshot_1.jpg) |![2](screenshot/screenshot_2.jpg) |
+| ------------- |:-------------:| 
+| ![3](screenshot/screenshot_3.jpg)| ![4](screenshot/screenshot_4.jpg) |
+
+
+
+
